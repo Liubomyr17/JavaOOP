@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        myCat = new Cat(4, "Puma");
+        myCat = new Cat(4, "Pyma");
         myCat.talk();
 
         Cat murzik = new Cat(2, "Murza");
