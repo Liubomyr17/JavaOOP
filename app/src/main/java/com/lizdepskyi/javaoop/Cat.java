@@ -2,7 +2,7 @@ package com.lizdepskyi.javaoop;
 
 import android.util.Log;
 
-public class Cat {
+public class Cat extends Animal {
 
     int age;
     String name;
