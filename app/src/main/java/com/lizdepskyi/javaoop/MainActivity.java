@@ -5,9 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.lizdepskyi.extenshiontask.R;
-
 public class MainActivity extends AppCompatActivity {
+
+    /**
+    *   private - видимість в межах класу;
+    *   default - доступ у межах пакету
+    *   protected - доступ у межах пакету та наслідників
+    *   public - найширший доступ
+    */
 
     Cat myCat;
 
