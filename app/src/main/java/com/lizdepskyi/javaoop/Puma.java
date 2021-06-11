@@ -11,15 +11,4 @@ public class Puma extends Cat {
         this.age = 3;
         this.pumaHelloText = "I'm cool cat!";
     }
-
-    public void talk() {
-        Log.i("talk()", createPumaHelloText());
-    }
-
-    public String createPumaHelloText() {
-        String pumaTalkText = "R-r-r! I'm puma. My name is " + name +
-                ", and I'm " + age + " years old.";
-        return pumaTalkText;
-    }
-
 }
