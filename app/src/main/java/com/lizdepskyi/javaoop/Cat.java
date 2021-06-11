@@ -91,4 +91,29 @@ public class Cat extends Animal {
     public void talk() {
         Log.i("talk()", helloText);
     }
+
+    public void catchMouse(int mouseWeight) {
+        class Mouse {
+            String color;
+            int weight;
+
+            public Mouse(String color, int weight) {
+                this.color = color;
+                this.weight = weight;
+            }
+
+            String mouseVoice() {
+                return "Pi - pi - pi";
+            }
+        }
+
+        Mouse mouse = new Mouse("White", mouseWeight);
+
+        if (mouseWeight < 5) {
+            Log.i("Cat say", "I will eat you " + mouse.mouseVoice());
+        } else {
+            Log.i("Cat say", "I afraid you " + mouse.mouseVoice());
+
+        }
+    }
 }
