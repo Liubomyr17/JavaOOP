@@ -15,16 +15,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Cat cat1 = new Cat();
+        Cat cat1 = new Cat(1, "Barsik");
         cat1.talk();
         Cat cat2 = new Cat(5, "Vaska");
         cat2.talk();
         Cat cat3 = new Cat(8, "Murzik");
         cat3.talk();
 
-        Cat.CatMood catMood = new Cat().new CatMood();
+        Cat.CatMustache catMustache = new Cat().new CatMustache();
 
-        Log.i("levelOfMood", String.valueOf(catMood.levelOfMood));
+        Log.i("mustacheLength", String.valueOf(catMustache.mustacheLength));
 
     }
 }
