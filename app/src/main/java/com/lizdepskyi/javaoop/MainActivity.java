@@ -17,5 +17,9 @@ public class MainActivity extends AppCompatActivity {
         vaska.talk(3);
         vaska.talk("Meow, meow!");
         Log.i("field age", String.valueOf(vaska.age));
+
+        vaska.roar();
+        vaska.roar(2);
+        vaska.roar("Vaska");
     }
 }

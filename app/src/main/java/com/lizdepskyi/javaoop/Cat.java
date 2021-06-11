@@ -28,4 +28,16 @@ public class Cat extends Animal {
     public void talk(String hello) {
         Log.i("talk()", "Meow! " + hello);
     }
+
+    public void roar() {
+        Log.i("roar()", "I do nothing");
+    }
+
+    public void roar(int age) {
+        Log.i("roar()", "I have " + age);
+    }
+
+    public void roar(String name) {
+        Log.i("roar()", "My name is " + name);
+    }
 }
