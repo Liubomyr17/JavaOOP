@@ -2,7 +2,7 @@ package com.lizdepskyi.javaoop;
 
 import android.util.Log;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
 
     int age;
     String name;
@@ -10,6 +10,11 @@ public class Cat extends Animal {
     static int count = 0;
     String helloText;
     CatMood catMood;
+
+    @Override
+    public void draw() {
+
+    }
 
     static class CountResetter {
         boolean moreThan100;
