@@ -14,7 +14,7 @@ public class Puma extends Cat implements Movable, Printable {
 
     @Override
     public void move() {
-        Log.i("move()", "Draw a puma");
+        Log.i("move()", "Draw an overridden puma");
 
     }
 

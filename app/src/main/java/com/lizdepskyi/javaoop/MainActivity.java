@@ -24,7 +24,12 @@ public class MainActivity extends AppCompatActivity {
         printable.print();
         printable.move();
 
-        printAnyObject(new Puma());
+        Movable.someMethod();
+
+        Puma puma = new Puma();
+        Log.i("speedOfMoving", "" + puma.speedOfMoving);
+        Log.i("speedOfMoving", "" + printable.speedOfMoving);
+        Log.i("speedOfMoving", "" + Movable.speedOfMoving);
 
     }
 
