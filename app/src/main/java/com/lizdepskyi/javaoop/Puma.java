@@ -2,13 +2,24 @@ package com.lizdepskyi.javaoop;
 
 import android.util.Log;
 
-public class Puma extends Cat {
+public class Puma extends Cat implements Movable, Printable {
 
     private String pumaHelloText;
 
-    public Puma() {
-        this.name = "Puma";
-        this.age = 3;
-        this.pumaHelloText = "I'm cool cat!";
+    @Override
+    public void draw() {
+        Log.i("draw()", "Draw a puma");
+
+    }
+
+    @Override
+    public void move() {
+        Log.i("move()", "Draw a puma");
+
+    }
+
+    @Override
+    public void print() {
+        Log.i("print()", "Print a puma");
     }
 }

@@ -17,7 +17,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       Cat cat = new Lion();
-       cat.talk();
+        Cat cat = new Lion();
+        cat.talk();
+
+        Puma printable = new Puma();
+        printable.print();
+        printable.move();
+
+        printAnyObject(new Puma());
+
+    }
+
+    void printAnyObject(Printable printable) {
+
     }
 }

@@ -9,6 +9,11 @@ public class Lion extends Cat {
                 ", and I'm " + age + " years old." + Lion.whatCatsLike());
     }
 
+    @Override
+    public void draw() {
+        Log.i("draw()", "Drw a lion");
+    }
+
     public static String whatCatsLike() {
         return "I'm lioness";
     }
